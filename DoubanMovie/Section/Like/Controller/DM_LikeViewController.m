@@ -1,22 +1,22 @@
 //
-//  DM_ShowingViewController.m
+//  DM_LikeViewController.m
 //  DoubanMovie
 //
 //  Created by apppc on 15/3/18.
 //  Copyright (c) 2015年 huatek. All rights reserved.
 //
-//正在上映列表
-#import "DM_ShowingViewController.h"
+//喜欢的电影
+#import "DM_LikeViewController.h"
 
-@interface DM_ShowingViewController ()
+@interface DM_LikeViewController ()
 
 @end
 
-@implementation DM_ShowingViewController
+@implementation DM_LikeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"正在热映";
+    self.title = @"喜欢";
 }
 
 - (void)didReceiveMemoryWarning {

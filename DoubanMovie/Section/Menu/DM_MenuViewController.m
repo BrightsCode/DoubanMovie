@@ -10,8 +10,11 @@
 #import "DM_ShowingViewController.h"
 #import "DM_TopViewController.h"
 #import "DM_PraiseListViewController.h"
-@interface DM_MenuViewController ()
+#import "DM_LikeViewController.h"
 
+@interface DM_MenuViewController ()
+@property (nonatomic, strong) NSArray *titles;
+@property (nonatomic, strong) NSArray *images;
 @end
 
 @implementation DM_MenuViewController
@@ -50,6 +53,9 @@
         [view addSubview:label];
         view;
     });
+    
+    self.titles = @[@"正在热映", @"Top 250", @"口碑榜",@"喜欢"];
+    self.images = @[@"",@"",@"",@""];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -106,10 +112,15 @@
         DM_NavicationViewController *navigationController = [[DM_NavicationViewController alloc] initWithRootViewController:topViewController];
         self.frostedViewController.contentViewController = navigationController;
     }
-    else
-    {
+    else if(indexPath.row == 2){
         DM_PraiseListViewController *praiseListViewController = [[DM_PraiseListViewController alloc] init];
         DM_NavicationViewController *navigationController = [[DM_NavicationViewController alloc] initWithRootViewController:praiseListViewController];
+        self.frostedViewController.contentViewController = navigationController;
+    }
+    else
+    {
+        DM_LikeViewController *likeViewController = [[DM_LikeViewController alloc] init];
+        DM_NavicationViewController *navigationController = [[DM_NavicationViewController alloc] initWithRootViewController:likeViewController];
         self.frostedViewController.contentViewController = navigationController;
     }
     
@@ -131,7 +142,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
 {
-    return 3;
+    return self.titles.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -143,12 +154,10 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
-    NSArray *titles = @[@"正在上映", @"Top 250", @"口碑榜"];
-    NSArray *images = @[@"",@"",@""];
-    cell.textLabel.text = titles[indexPath.row];
+    cell.textLabel.text = self.titles[indexPath.row];
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:17];
-    cell.imageView.image = mImageByName(images[indexPath.row]);
+    cell.imageView.image = mImageByName(self.images[indexPath.row]);
     
     UIView *aView = [[UIView alloc] initWithFrame:cell.contentView.frame];
     aView.backgroundColor = mRGBColor(36, 171, 94);
