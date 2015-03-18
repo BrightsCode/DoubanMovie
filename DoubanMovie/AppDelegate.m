@@ -33,6 +33,17 @@
     REFViewController.liveBlur = YES;
     REFViewController.menuViewSize = CGSizeMake(self.window.frame.size.width - 150, self.window.frame.size.height);
     
+    [[UINavigationBar appearance] setBarTintColor:mRGBColor(16, 160, 74)];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8];
+    shadow.shadowOffset = CGSizeMake(0, 0);
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName,
+                                                           shadow, NSShadowAttributeName,
+                                                           [UIFont boldSystemFontOfSize:21], NSFontAttributeName, nil]];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     self.window.rootViewController = REFViewController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

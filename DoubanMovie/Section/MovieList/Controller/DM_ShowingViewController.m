@@ -17,16 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"正在上映";
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu"
-                                                                             style:UIBarButtonItemStylePlain
-                                                                            target:(DM_NavicationViewController *)self.navigationController
-                                                                            action:@selector(showMenu)];
-    
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    imageView.image = [UIImage imageNamed:@"Balloon"];
-    imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    imageView.contentMode = UIViewContentModeScaleAspectFill;
-    [self.view addSubview:imageView];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,6 +7,7 @@
 //
 
 #import "DM_BaseViewController.h"
+#import "DM_NavicationViewController.h"
 
 @interface DM_BaseViewController ()
 
@@ -16,7 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:mImageByName(@"menu_titlebar") style:UIBarButtonItemStylePlain target:(DM_NavicationViewController *)self.navigationController action:@selector(showMenu)];
 }
 
 - (void)didReceiveMemoryWarning {

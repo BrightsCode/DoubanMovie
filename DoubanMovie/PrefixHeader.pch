@@ -17,5 +17,5 @@
 #import "GeneralMethods.h"
 #import "REFrostedViewController.h"
 #import "DM_NavicationViewController.h"
-
+#import <SDWebImage/UIImageView+WebCache.h>
 #endif

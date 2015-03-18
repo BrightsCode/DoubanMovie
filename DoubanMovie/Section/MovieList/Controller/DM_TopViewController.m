@@ -1,22 +1,22 @@
 //
-//  DM_PraiseListViewController.m
+//  DM_TopViewController.m
 //  DoubanMovie
 //
 //  Created by apppc on 15/3/18.
 //  Copyright (c) 2015年 huatek. All rights reserved.
 //
-//口碑榜
-#import "DM_PraiseListViewController.h"
+//top榜
+#import "DM_TopViewController.h"
 
-@interface DM_PraiseListViewController ()
+@interface DM_TopViewController ()
 
 @end
 
-@implementation DM_PraiseListViewController
+@implementation DM_TopViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = @"Top 500";
 }
 
 - (void)didReceiveMemoryWarning {
