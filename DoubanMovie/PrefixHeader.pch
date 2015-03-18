@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  DoubanMovie
+//
+//  Created by apppc on 15/3/18.
+//  Copyright (c) 2015年 huatek. All rights reserved.
+//
+
+#ifndef DoubanMovie_PrefixHeader_pch
+#define DoubanMovie_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "DM_AppMacro.h"
+#import "DM_UtilsMacro.h"
+#import "DM_VendorMacro.h"
+#import "GeneralMethods.h"
+#import "REFrostedViewController.h"
+#import "DM_NavicationViewController.h"
+
+#endif
