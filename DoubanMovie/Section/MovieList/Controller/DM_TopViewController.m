@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Top 500";
+    self.title = @"Top 250";
 }
 
 - (void)didReceiveMemoryWarning {

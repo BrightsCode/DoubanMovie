@@ -9,6 +9,7 @@
 #import "DM_MenuViewController.h"
 #import "DM_ShowingViewController.h"
 #import "DM_TopViewController.h"
+#import "DM_PraiseListViewController.h"
 @interface DM_MenuViewController ()
 
 @end
@@ -62,8 +63,6 @@
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     cell.backgroundColor = [UIColor clearColor];
-//    cell.textLabel.textColor = [UIColor whiteColor];
-//    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:17];
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)sectionIndex
@@ -96,13 +95,21 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (indexPath.section == 0 && indexPath.row == 0) {
+    
+    if (indexPath.row == 0) {
         DM_ShowingViewController *showViewController = [[DM_ShowingViewController alloc] init];
         DM_NavicationViewController *navigationController = [[DM_NavicationViewController alloc] initWithRootViewController:showViewController];
         self.frostedViewController.contentViewController = navigationController;
-    } else {
+    }
+    else if(indexPath.row == 1){
         DM_TopViewController *topViewController = [[DM_TopViewController alloc] init];
         DM_NavicationViewController *navigationController = [[DM_NavicationViewController alloc] initWithRootViewController:topViewController];
+        self.frostedViewController.contentViewController = navigationController;
+    }
+    else
+    {
+        DM_PraiseListViewController *praiseListViewController = [[DM_PraiseListViewController alloc] init];
+        DM_NavicationViewController *navigationController = [[DM_NavicationViewController alloc] initWithRootViewController:praiseListViewController];
         self.frostedViewController.contentViewController = navigationController;
     }
     
@@ -136,7 +143,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
-    NSArray *titles = @[@"正在上映", @"Top500", @"口碑榜"];
+    NSArray *titles = @[@"正在上映", @"Top 250", @"口碑榜"];
     NSArray *images = @[@"",@"",@""];
     cell.textLabel.text = titles[indexPath.row];
     cell.textLabel.textColor = [UIColor whiteColor];
