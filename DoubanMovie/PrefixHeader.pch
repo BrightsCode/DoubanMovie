@@ -21,5 +21,9 @@
 #import "DM_LikeViewController.h"
 #import "DM_SearchViewController.h"
 #import "DM_ActorListViewController.h"
+
+#import <HMSegmentedControl.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <AFNetworking.h>
+#import <REFrostedViewController.h>
 #endif
