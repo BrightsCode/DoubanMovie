@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = []
+    self.title = self.rankTitle;
 }
 
 - (void)didReceiveMemoryWarning {

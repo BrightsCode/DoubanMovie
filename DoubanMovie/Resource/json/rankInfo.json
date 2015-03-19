@@ -1,0 +1,40 @@
+{
+    "rankInfo": [
+                 {
+                 "title": "正在热映",
+                 "image": "",
+                 "detail": "精彩电影，正在上映",
+                 "rank_url": "nowplaying"
+                 },
+                 {
+                 "title": "即将上映",
+                 "image": "",
+                 "detail": "优秀电影等你来发现",
+                 "rank_url": "coming"
+                 },
+                 {
+                 "title": "Top250",
+                 "image": "",
+                 "detail": "部部经典，值得一看",
+                 "rank_url": "top250"
+                 },
+                 {
+                 "title": "口碑榜",
+                 "image": "",
+                 "detail": "豆瓣用户口碑最好电影",
+                 "rank_url": "us_box"
+                 },
+                 {
+                 "title": "北美票房榜",
+                 "image": "",
+                 "detail": "好莱坞大片控",
+                 "rank_url": "weekly"
+                 },
+                 {
+                 "title": "新片榜",
+                 "image": "",
+                 "detail": "新鲜出炉的电影你怎能错过",
+                 "rank_url": "new_movies"
+                 }
+                 ]
+}

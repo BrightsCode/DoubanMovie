@@ -29,7 +29,7 @@
     REFrostedViewController *REFViewController = [[REFrostedViewController alloc] initWithContentViewController:navicationVC menuViewController:menuVC];
     REFViewController.delegate = self;
     REFViewController.liveBlur = YES;
-    REFViewController.menuViewSize = CGSizeMake(self.window.frame.size.width - 150, self.window.frame.size.height);
+    REFViewController.menuViewSize = CGSizeMake(self.window.frame.size.width - 200, self.window.frame.size.height);
     
     [[UINavigationBar appearance] setBarTintColor:mRGBColor(16, 160, 74)];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];

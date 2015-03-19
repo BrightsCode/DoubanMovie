@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:mImageByName(@"btn_back") style:UIBarButtonItemStylePlain target:self action:@selector(actionBack)];
 }
 
@@ -26,7 +27,7 @@
  */
 -(void)actionBack
 {
-    [self.navigationController popViewControllerAnimated:NO];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

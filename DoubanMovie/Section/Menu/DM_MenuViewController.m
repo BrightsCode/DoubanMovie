@@ -52,7 +52,7 @@
     });
     
     self.titles = @[@"榜单", @"搜索", @"演员",@"喜欢"];
-    self.images = @[@"",@"",@"",@""];
+    self.images = @[@"ranklist",@"search",@"actor",@"like"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -129,7 +129,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 54;
+    return 64;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -154,7 +154,7 @@
     cell.textLabel.text = self.titles[indexPath.row];
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:17];
-    cell.textLabel.textAlignment = NSTextAlignmentCenter;
+    cell.textLabel.textAlignment = NSTextAlignmentLeft;
     cell.imageView.image = mImageByName(self.images[indexPath.row]);
     
     UIView *aView = [[UIView alloc] initWithFrame:cell.contentView.frame];

@@ -10,4 +10,5 @@
 
 @interface DM_RankDetailViewController : DM_SecondViewController
 @property (nonatomic, strong) NSString *rankParameter;
+@property (nonatomic, strong) NSString *rankTitle;
 @end
