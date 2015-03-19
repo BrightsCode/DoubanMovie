@@ -31,4 +31,5 @@
 #import <AFNetworking.h>
 #import <REFrostedViewController.h>
 #import <MJRefresh.h>
+#import <SVProgressHUD.h>
 #endif
