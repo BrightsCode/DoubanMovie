@@ -54,6 +54,12 @@
 #define COCOAPODS_VERSION_MINOR_HMSegmentedControl 5
 #define COCOAPODS_VERSION_PATCH_HMSegmentedControl 0
 
+// MJRefresh
+#define COCOAPODS_POD_AVAILABLE_MJRefresh
+#define COCOAPODS_VERSION_MAJOR_MJRefresh 1
+#define COCOAPODS_VERSION_MINOR_MJRefresh 4
+#define COCOAPODS_VERSION_PATCH_MJRefresh 0
+
 // REFrostedViewController
 #define COCOAPODS_POD_AVAILABLE_REFrostedViewController
 #define COCOAPODS_VERSION_MAJOR_REFrostedViewController 2

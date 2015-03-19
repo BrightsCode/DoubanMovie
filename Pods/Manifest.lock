@@ -21,6 +21,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - HMSegmentedControl (1.5)
+  - MJRefresh (1.4.0)
   - REFrostedViewController (2.4.7)
   - SDWebImage (3.7.2):
     - SDWebImage/Core (= 3.7.2)
@@ -29,12 +30,14 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.5.1)
   - HMSegmentedControl (~> 1.5)
+  - MJRefresh
   - REFrostedViewController (~> 2.4.7)
   - SDWebImage (~> 3.6)
 
 SPEC CHECKSUMS:
   AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
   HMSegmentedControl: 5bb76002ce529ad83855a06cbdb5c6e48732141b
+  MJRefresh: 85e093e1986091e4930c027b709cbd2b764e6866
   REFrostedViewController: 08870a24788191339608b80b2bd4fce549858f0d
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
 

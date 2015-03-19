@@ -25,6 +25,9 @@
 		7AC4F9BD1ABA8976007BAC70 /* DM_RankListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC4F9BC1ABA8976007BAC70 /* DM_RankListViewController.m */; };
 		7AC4F9C41ABA8B29007BAC70 /* DM_SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC4F9C31ABA8B29007BAC70 /* DM_SearchViewController.m */; };
 		7AC4F9C71ABA8BBA007BAC70 /* DM_ActorListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC4F9C61ABA8BBA007BAC70 /* DM_ActorListViewController.m */; };
+		7AC4F9CA1ABA994C007BAC70 /* DM_RankCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC4F9C91ABA994C007BAC70 /* DM_RankCollectionViewCell.m */; };
+		7AC4F9CD1ABAA033007BAC70 /* DM_SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC4F9CC1ABAA033007BAC70 /* DM_SecondViewController.m */; };
+		7AC4F9D01ABAA064007BAC70 /* DM_RankDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC4F9CF1ABAA064007BAC70 /* DM_RankDetailViewController.m */; };
 		CF5AE1DC31CE27CAF284E467 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAABFBFBAD936C45B548CAF /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +82,12 @@
 		7AC4F9C31ABA8B29007BAC70 /* DM_SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DM_SearchViewController.m; sourceTree = "<group>"; };
 		7AC4F9C51ABA8BBA007BAC70 /* DM_ActorListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DM_ActorListViewController.h; sourceTree = "<group>"; };
 		7AC4F9C61ABA8BBA007BAC70 /* DM_ActorListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DM_ActorListViewController.m; sourceTree = "<group>"; };
+		7AC4F9C81ABA994C007BAC70 /* DM_RankCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DM_RankCollectionViewCell.h; sourceTree = "<group>"; };
+		7AC4F9C91ABA994C007BAC70 /* DM_RankCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DM_RankCollectionViewCell.m; sourceTree = "<group>"; };
+		7AC4F9CB1ABAA033007BAC70 /* DM_SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DM_SecondViewController.h; sourceTree = "<group>"; };
+		7AC4F9CC1ABAA033007BAC70 /* DM_SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DM_SecondViewController.m; sourceTree = "<group>"; };
+		7AC4F9CE1ABAA064007BAC70 /* DM_RankDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DM_RankDetailViewController.h; sourceTree = "<group>"; };
+		7AC4F9CF1ABAA064007BAC70 /* DM_RankDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DM_RankDetailViewController.m; sourceTree = "<group>"; };
 		99B506CABD02A03B37927A1D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,6 +197,8 @@
 			children = (
 				7A6BC56E1AB916FB00B415C2 /* DM_BaseViewController.h */,
 				7A6BC56F1AB916FB00B415C2 /* DM_BaseViewController.m */,
+				7AC4F9CB1ABAA033007BAC70 /* DM_SecondViewController.h */,
+				7AC4F9CC1ABAA033007BAC70 /* DM_SecondViewController.m */,
 			);
 			path = GeneralClass;
 			sourceTree = "<group>";
@@ -335,6 +346,8 @@
 			children = (
 				7AC4F9BB1ABA8976007BAC70 /* DM_RankListViewController.h */,
 				7AC4F9BC1ABA8976007BAC70 /* DM_RankListViewController.m */,
+				7AC4F9CE1ABAA064007BAC70 /* DM_RankDetailViewController.h */,
+				7AC4F9CF1ABAA064007BAC70 /* DM_RankDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -349,6 +362,8 @@
 		7AC4F9AF1ABA8853007BAC70 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7AC4F9C81ABA994C007BAC70 /* DM_RankCollectionViewCell.h */,
+				7AC4F9C91ABA994C007BAC70 /* DM_RankCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -567,6 +582,8 @@
 			files = (
 				7A6BC54B1AB913AE00B415C2 /* AppDelegate.m in Sources */,
 				7AC4F9BD1ABA8976007BAC70 /* DM_RankListViewController.m in Sources */,
+				7AC4F9CA1ABA994C007BAC70 /* DM_RankCollectionViewCell.m in Sources */,
+				7AC4F9CD1ABAA033007BAC70 /* DM_SecondViewController.m in Sources */,
 				7A6BC5881AB91BE400B415C2 /* UIColor+LightRandom.m in Sources */,
 				7AC4F9C71ABA8BBA007BAC70 /* DM_ActorListViewController.m in Sources */,
 				7A6BC5481AB913AE00B415C2 /* main.m in Sources */,
@@ -575,6 +592,7 @@
 				7A6BC5871AB91BE400B415C2 /* GeneralMethods.m in Sources */,
 				7A6BC58A1AB91BE400B415C2 /* UIView+Layout.m in Sources */,
 				7A8B37711AB987840060311A /* DM_LikeViewController.m in Sources */,
+				7AC4F9D01ABAA064007BAC70 /* DM_RankDetailViewController.m in Sources */,
 				7A8B37661AB97C360060311A /* DM_NavicationViewController.m in Sources */,
 				7AC4F9C41ABA8B29007BAC70 /* DM_SearchViewController.m in Sources */,
 			);

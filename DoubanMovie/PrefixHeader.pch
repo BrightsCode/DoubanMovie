@@ -22,8 +22,13 @@
 #import "DM_SearchViewController.h"
 #import "DM_ActorListViewController.h"
 
+#import "UIView+Layout.h"
+#import "UIColor+LightRandom.h"
+#import "GeneralMethods.h"
+
 #import <HMSegmentedControl.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <AFNetworking.h>
 #import <REFrostedViewController.h>
+#import <MJRefresh.h>
 #endif
