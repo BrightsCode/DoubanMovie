@@ -1,22 +1,22 @@
 //
-//  DM_ShowingViewController.m
+//  DM_RankListViewController.m
 //  DoubanMovie
 //
-//  Created by apppc on 15/3/18.
+//  Created by apppc on 15/3/19.
 //  Copyright (c) 2015年 huatek. All rights reserved.
 //
-//正在上映列表
-#import "DM_ShowingViewController.h"
 
-@interface DM_ShowingViewController ()
+#import "DM_RankListViewController.h"
+
+@interface DM_RankListViewController ()
 
 @end
 
-@implementation DM_ShowingViewController
+@implementation DM_RankListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"正在热映";
+    self.title = @"榜单";
 }
 
 - (void)didReceiveMemoryWarning {

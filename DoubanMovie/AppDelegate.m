@@ -7,8 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "DM_TopViewController.h"
-#import "DM_ShowingViewController.h"
 #import "DM_NavicationViewController.h"
 #import "DM_MenuViewController.h"
 
@@ -24,9 +22,9 @@
     
     
 //    DM_TopViewController *topVC = [[DM_TopViewController alloc] init];
-    DM_ShowingViewController *showVC = [[DM_ShowingViewController alloc] init];
+    DM_RankListViewController *rankViewController = [[DM_RankListViewController alloc] init];
     DM_MenuViewController *menuVC = [[DM_MenuViewController alloc] initWithStyle:UITableViewStylePlain];
-    DM_NavicationViewController *navicationVC = [[DM_NavicationViewController alloc] initWithRootViewController:showVC];
+    DM_NavicationViewController *navicationVC = [[DM_NavicationViewController alloc] initWithRootViewController:rankViewController];
     
     REFrostedViewController *REFViewController = [[REFrostedViewController alloc] initWithContentViewController:navicationVC menuViewController:menuVC];
     REFViewController.delegate = self;

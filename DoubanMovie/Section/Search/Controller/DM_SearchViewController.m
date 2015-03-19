@@ -1,22 +1,22 @@
 //
-//  DM_PraiseListViewController.m
+//  DM_SearchViewController.m
 //  DoubanMovie
 //
-//  Created by apppc on 15/3/18.
+//  Created by apppc on 15/3/19.
 //  Copyright (c) 2015年 huatek. All rights reserved.
 //
-//口碑榜
-#import "DM_PraiseListViewController.h"
 
-@interface DM_PraiseListViewController ()
+#import "DM_SearchViewController.h"
+
+@interface DM_SearchViewController ()
 
 @end
 
-@implementation DM_PraiseListViewController
+@implementation DM_SearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"口碑榜";
+    self.title = @"搜索";
 }
 
 - (void)didReceiveMemoryWarning {

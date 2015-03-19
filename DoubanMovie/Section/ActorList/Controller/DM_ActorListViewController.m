@@ -1,22 +1,22 @@
 //
-//  DM_TopViewController.m
+//  DM_ActorListViewController.m
 //  DoubanMovie
 //
-//  Created by apppc on 15/3/18.
+//  Created by apppc on 15/3/19.
 //  Copyright (c) 2015年 huatek. All rights reserved.
 //
-//top榜
-#import "DM_TopViewController.h"
 
-@interface DM_TopViewController ()
+#import "DM_ActorListViewController.h"
+
+@interface DM_ActorListViewController ()
 
 @end
 
-@implementation DM_TopViewController
+@implementation DM_ActorListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Top 250";
+    self.title = @"演员";
 }
 
 - (void)didReceiveMemoryWarning {

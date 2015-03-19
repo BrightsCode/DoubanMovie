@@ -17,5 +17,9 @@
 #import "GeneralMethods.h"
 #import "REFrostedViewController.h"
 #import "DM_NavicationViewController.h"
+#import "DM_RankListViewController.h"
+#import "DM_LikeViewController.h"
+#import "DM_SearchViewController.h"
+#import "DM_ActorListViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #endif

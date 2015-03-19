@@ -7,9 +7,6 @@
 //
 
 #import "DM_MenuViewController.h"
-#import "DM_ShowingViewController.h"
-#import "DM_TopViewController.h"
-#import "DM_PraiseListViewController.h"
 #import "DM_LikeViewController.h"
 
 @interface DM_MenuViewController ()
@@ -54,7 +51,7 @@
         view;
     });
     
-    self.titles = @[@"正在热映", @"Top 250", @"口碑榜",@"喜欢"];
+    self.titles = @[@"榜单", @"搜索", @"演员",@"喜欢"];
     self.images = @[@"",@"",@"",@""];
 }
 
@@ -103,18 +100,18 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     if (indexPath.row == 0) {
-        DM_ShowingViewController *showViewController = [[DM_ShowingViewController alloc] init];
-        DM_NavicationViewController *navigationController = [[DM_NavicationViewController alloc] initWithRootViewController:showViewController];
+        DM_RankListViewController *rankViewController = [[DM_RankListViewController alloc] init];
+        DM_NavicationViewController *navigationController = [[DM_NavicationViewController alloc] initWithRootViewController:rankViewController];
         self.frostedViewController.contentViewController = navigationController;
     }
     else if(indexPath.row == 1){
-        DM_TopViewController *topViewController = [[DM_TopViewController alloc] init];
-        DM_NavicationViewController *navigationController = [[DM_NavicationViewController alloc] initWithRootViewController:topViewController];
+        DM_SearchViewController *searchViewController = [[DM_SearchViewController alloc] init];
+        DM_NavicationViewController *navigationController = [[DM_NavicationViewController alloc] initWithRootViewController:searchViewController];
         self.frostedViewController.contentViewController = navigationController;
     }
     else if(indexPath.row == 2){
-        DM_PraiseListViewController *praiseListViewController = [[DM_PraiseListViewController alloc] init];
-        DM_NavicationViewController *navigationController = [[DM_NavicationViewController alloc] initWithRootViewController:praiseListViewController];
+        DM_ActorListViewController *actorListViewController = [[DM_ActorListViewController alloc] init];
+        DM_NavicationViewController *navigationController = [[DM_NavicationViewController alloc] initWithRootViewController:actorListViewController];
         self.frostedViewController.contentViewController = navigationController;
     }
     else
@@ -157,6 +154,7 @@
     cell.textLabel.text = self.titles[indexPath.row];
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:17];
+    cell.textLabel.textAlignment = NSTextAlignmentCenter;
     cell.imageView.image = mImageByName(self.images[indexPath.row]);
     
     UIView *aView = [[UIView alloc] initWithFrame:cell.contentView.frame];
