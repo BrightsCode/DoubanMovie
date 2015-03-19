@@ -17,8 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:mImageByName(@"menu_titlebar") style:UIBarButtonItemStylePlain target:(DM_NavicationViewController *)self.navigationController action:@selector(showMenu)];
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:mImageByName(@"btn_menu") style:UIBarButtonItemStylePlain target:(DM_NavicationViewController *)self.navigationController action:@selector(showMenu)];
 }
 
 - (void)didReceiveMemoryWarning {

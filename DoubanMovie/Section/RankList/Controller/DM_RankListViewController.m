@@ -5,7 +5,7 @@
 //  Created by apppc on 15/3/19.
 //  Copyright (c) 2015年 huatek. All rights reserved.
 //
-//榜单
+//榜单列表
 #import "DM_RankListViewController.h"
 #import "DM_RankCollectionViewCell.h"
 #import "DM_RankDetailViewController.h"
@@ -16,7 +16,7 @@
 @property (strong,nonatomic) NSArray *arrayTitle;  //排行榜名称
 @property (strong,nonatomic) NSArray *arrayImage;  //排行榜图片
 @property (strong,nonatomic) NSArray *arrayDetail; //排行版说明
-@property (strong,nonatomic) NSArray *arrayUrl;    //榜单URL参数；
+@property (strong,nonatomic) NSArray *arrayUrl;    //榜单URL参数
 @end
 
 @implementation DM_RankListViewController
@@ -35,13 +35,13 @@ NSString *const  CollectionCellIdentifier = @"rankListCell";
     
     collectLayout = [[UICollectionViewFlowLayout alloc]init];
     [collectLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
-    collectLayout.itemSize = CGSizeMake(self.view.width/2,100);
+    collectLayout.itemSize = CGSizeMake(self.view.width/2,150);
     collectLayout.minimumLineSpacing = 0;
     collectLayout.minimumInteritemSpacing = 0;
     collectLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
     collectLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0 , 0);
     
-    collectRankList = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, self.view.width, self.view.height - 64) collectionViewLayout:collectLayout];
+    collectRankList = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height - 64) collectionViewLayout:collectLayout];
     collectRankList.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     collectRankList.dataSource = self;
     collectRankList.delegate = self;
@@ -49,12 +49,12 @@ NSString *const  CollectionCellIdentifier = @"rankListCell";
     [collectRankList registerClass:[DM_RankCollectionViewCell class] forCellWithReuseIdentifier:CollectionCellIdentifier];
     collectRankList.showsHorizontalScrollIndicator = NO;
     collectRankList.showsVerticalScrollIndicator = NO;
-    collectRankList.alwaysBounceVertical = YES;
+    collectRankList.alwaysBounceVertical = NO;
     [self.view addSubview:collectRankList];
     
-    arrayTitle = @[@"1",@"2",@"3",@"4",@"5",@"6"];
+    arrayTitle = @[@"正在热映",@"即将上映",@"Top250",@"口碑榜",@"北美票房榜",@"新片榜"];
     arrayImage = @[@"",@"",@"",@"",@"",@""];
-    arrayDetail = @[@"",@"",@"",@"",@"",@""];
+    arrayDetail = @[@"精彩电影，正在上映",@"优秀电影等你来发现",@"部部经典，值得一看",@"豆瓣用户口碑最好电影",@"好莱坞大片",@"优秀电影等你来发现"];
     arrayUrl = @[@"nowplaying",@"coming",@"top250",@"us_box",@"weekly",@"new_movies"];
 }
 

@@ -222,6 +222,13 @@
 #define mScreenHeight         ([UIScreen mainScreen].bounds.size.height)
 
 /**
+ *  页面背景颜色
+ *
+ *  @since 1.0
+ */
+#define mBackGroundColor [UIColor whiteColor]
+
+/**
  *  设置navigation Bar 的背景图片颜色
  *
  *
