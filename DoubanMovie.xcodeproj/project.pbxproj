@@ -35,6 +35,7 @@
 		D42393371ABB1AC3003762AC /* like@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D42393331ABB1AC3003762AC /* like@2x.png */; };
 		D42393381ABB1AC3003762AC /* ranklist@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D42393341ABB1AC3003762AC /* ranklist@2x.png */; };
 		D42393391ABB1AC3003762AC /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D42393351ABB1AC3003762AC /* search@2x.png */; };
+		D4E7F9391ABDFFA900688FF6 /* DM_RankListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E7F9381ABDFFA900688FF6 /* DM_RankListTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,8 @@
 		D42393331ABB1AC3003762AC /* like@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "like@2x.png"; sourceTree = "<group>"; };
 		D42393341ABB1AC3003762AC /* ranklist@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ranklist@2x.png"; sourceTree = "<group>"; };
 		D42393351ABB1AC3003762AC /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
+		D4E7F9371ABDFFA900688FF6 /* DM_RankListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DM_RankListTableViewCell.h; sourceTree = "<group>"; };
+		D4E7F9381ABDFFA900688FF6 /* DM_RankListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DM_RankListTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,6 +379,8 @@
 			children = (
 				7AC4F9C81ABA994C007BAC70 /* DM_RankCollectionViewCell.h */,
 				7AC4F9C91ABA994C007BAC70 /* DM_RankCollectionViewCell.m */,
+				D4E7F9371ABDFFA900688FF6 /* DM_RankListTableViewCell.h */,
+				D4E7F9381ABDFFA900688FF6 /* DM_RankListTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -620,6 +625,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4E7F9391ABDFFA900688FF6 /* DM_RankListTableViewCell.m in Sources */,
 				7A6BC54B1AB913AE00B415C2 /* AppDelegate.m in Sources */,
 				7AC4F9BD1ABA8976007BAC70 /* DM_RankListViewController.m in Sources */,
 				7AC4F9CA1ABA994C007BAC70 /* DM_RankCollectionViewCell.m in Sources */,
